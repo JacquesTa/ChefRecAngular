@@ -1,0 +1,28 @@
+<app-custom-page-layout>
+  <div class="flex h-full w-full justify-center items-center">
+    <div class="flex flex-col w-full">
+      <div
+        class="flex flex-col text-darkOrange text-5xl font-shrikland h-10 justify-center items-center px-6 py-4 mt-36 rounded-2xl w-full"
+      >
+        <span class="flex"> The best app </span>
+
+        <span class="flex mt-4"> to turn your groceries </span>
+        <span class="flex mt-4"> into 5-stars meals! </span>
+      </div>
+      <div class="flex flex-col items-center justify-center mt-56 h-auto">
+        <button
+          class="flex justify-center items-center py-6 px-52 text-darkOrange text-xl font-shrikland bg-white bg-opacity-25 h-2 rounded-full hover:bg-opacity-80 mt-8"
+          (click)="onLogin()"
+        >
+          Sign In
+        </button>
+        <div
+          class="h-2 mt-8 text-darkBrown text-sm font-poppins cursor-pointer hover:text-darkOrange"
+          (click)="onSignUp()"
+        >
+          Create account
+        </div>
+      </div>
+    </div>
+  </div>
+</app-custom-page-layout>

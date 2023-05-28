@@ -1,0 +1,64 @@
+<app-custom-page-layout>
+  <div class="flex items-center justify-center">
+    <div class="flex flex-col bg-white w-[900px] h-[700px] rounded-2xl">
+      <div class="flex flex-col justify-center items-center h-2 mt-28">
+        <span class="text-darkOrange justify-center font-shrikland text-3xl">
+          Welcome back
+        </span>
+        <span
+          class="text-orange text-opacity-50 justify-center font-poppins text-lg mt-4"
+        >
+          Login back to your account
+        </span>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <form
+          [formGroup]="loginForm"
+          class="flex flex-col items-center justify-center h-10 -mt-5"
+        >
+          <div
+            class="flex items-center border-2 border-darkOrange py-2 px-3 rounded-2xl h-14 bg-white w-full"
+          >
+            <img src="assets/images/8utilisateur.svg" class="h-5 w-5" alt="" />
+            <input
+              class="px-2 outline-none border-none w-full h-11"
+              type="text"
+              formControlName="email"
+              placeholder="Email"
+            />
+          </div>
+          <div
+            class="flex items-center border-2 border-darkOrange py-2 px-3 rounded-2xl h-14 bg-white mt-8 w-full"
+          >
+            <img src="assets/images/8cadena.png" class="h-5 w-5" alt="" />
+            <input
+              class="px-2 outline-none border-none w-full h-11"
+              type="password"
+              formControlName="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="flex flex-col items-center justify-center h-auto">
+            <button
+              class="flex justify-center items-center py-6 px-20 text-darkBrown text-xl font-shrikland bg-orange h-2 rounded-full hover:bg-opacity-80 mt-8"
+              (click)="onLogin()"
+            >
+              Sign In
+            </button>
+            <div
+              class="h-2 mt-8 text-orange text-sm font-poppins"
+              (click)="onSignUp()"
+            >
+              Don't have an account yet?
+              <span
+                class="text-orange text-sm font-poppins cursor-pointer hover:text-darkOrange"
+              >
+                Click here
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</app-custom-page-layout>
