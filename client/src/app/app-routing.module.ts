@@ -1,17 +1,23 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {LoginComponent} from './auth/login/login.component';
 import {RegistrationComponent} from './auth/registration/registration.component';
-import {SignUpComponent} from './auth/sign-up/sign-up.component';
 import {HomeComponent} from './pages/home/home.component';
-import {ReceptComponent} from './pages/recept/recept.component';
+import {RecipeComponent} from './pages/recipe/recipe.component';
 
 const routes: Routes = [
-  {path: 'registration', component: RegistrationComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'sign-up', component: SignUpComponent},
+  {
+    path: 'registration',
+    component: RegistrationComponent,
+  },
   {path: 'home', component: HomeComponent},
-  {path: 'recept', component: ReceptComponent},
+  {path: 'recipe', component: RecipeComponent},
+  {
+    path: 'user',
+    loadChildren: () =>
+      import('./auth/registration/registration.module').then(
+        (mod) => mod.RegistrationModule
+      ),
+  },
   {path: '**', redirectTo: 'registration'},
 ];
 

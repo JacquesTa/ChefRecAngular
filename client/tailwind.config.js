@@ -18,7 +18,7 @@ module.exports = {
     fontFamily: {
       poppins: 'Poppins',
       shrikland: 'Shrikland',
-      fasthand: 'Fasthand',
+      pacifico: 'Pacifico',
     },
     backgroundImage: {
       'bg-registration1': "url('/assets/images/cook.jpg')",

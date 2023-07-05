@@ -38,7 +38,7 @@ export class SignUpComponent {
 
   // Redirect the user to the sign-up screen
   onLogin() {
-    this.router.navigateByUrl('login');
+    this.router.navigateByUrl('/user/login');
   }
 
   // convenience getter for easy access to form fields

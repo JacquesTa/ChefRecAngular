@@ -10,11 +10,11 @@ export class RegistrationComponent {
 
   // Redirect the user to the login screen
   onLogin() {
-    this.router.navigateByUrl('login');
+    this.router.navigateByUrl('/user/login');
   }
 
   // Redirect the user to the sign-up screen
   onSignUp() {
-    this.router.navigateByUrl('sign-up');
+    this.router.navigateByUrl('/user/sign-up');
   }
 }

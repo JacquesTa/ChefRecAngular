@@ -32,12 +32,12 @@ export class LoginComponent {
     console.log(this.loginControls);
     console.log(this.emailControls);
     console.log(this.passwordControls);
-    this.router.navigateByUrl('dashboard');
+    this.router.navigateByUrl('home');
   }
 
   // Redirect the user to the sign-up screen
   onSignUp() {
-    this.router.navigateByUrl('sign-up');
+    this.router.navigateByUrl('/user/sign-up');
   }
 
   // convenience getter for easy access to form fields
