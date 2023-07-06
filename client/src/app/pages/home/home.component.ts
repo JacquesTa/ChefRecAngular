@@ -12,14 +12,14 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {}
 
   onGrocery() {
-    this.router.navigateByUrl('grocery-list');
+    this.router.navigateByUrl('/user/grocery-list');
   }
 
   onRecipe() {
-    this.router.navigateByUrl('recipe');
+    this.router.navigateByUrl('/user/recipe');
   }
 
   onMealPlan() {
-    this.router.navigateByUrl('meal-plan');
+    this.router.navigateByUrl('/user/meal-plan');
   }
 }

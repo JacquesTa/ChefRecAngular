@@ -18,6 +18,11 @@ const routes: Routes = [
         (mod) => mod.RegistrationModule
       ),
   },
+  {
+    path: 'user',
+    loadChildren: () =>
+      import('./pages/home/home.module').then((mod) => mod.HomeModule),
+  },
   {path: '**', redirectTo: 'registration'},
 ];
 
